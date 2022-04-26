@@ -12,8 +12,7 @@ git clone https://github.com/BotquinThomas/fastapi-postgress.git
 docker-compose up -d 
 ```
 
-3) navigate to [http://localhost:80](http://localhost:80) (on your browser)
-
+3) navigate to [http://localhost:80/docs](http://localhost:80/docs) to find the available endpoints and get/post queries available
 
 4) if you want to have a look inside the container (postgres or fast-api)
 ```
