@@ -1,5 +1,4 @@
-# fast-api
-Fast-api &amp; postgresql with docker
+# fast-api & postgress with docker
 
 ### How to run this project:
 
