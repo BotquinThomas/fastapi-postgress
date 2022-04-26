@@ -1,0 +1,28 @@
+version: "3.7"
+
+services:
+  postgres:
+    build: ./postgres/
+    container_name: postgres
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
+    volumes:
+      - postgres:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+
+  fast-api:
+    build: ./fast-api/
+    container_name: fast-api
+    restart: always
+    ports:
+      - "80:80"
+    volumes:
+      - ./fast-api:/app/app/
+    depends_on:
+      - postgres
+
+volumes:
+  postgres:
