@@ -5,7 +5,7 @@ Fast-api &amp; postgresql with docker
 
 1) clone project and cd into it
 ```
-git clone https://github.com/BotquinThomas/fast-api-postgress.git
+git clone https://github.com/BotquinThomas/fastapi-postgress.git
 ```
 
 2) run docker container in background from /path-to/docker-compose.yml
