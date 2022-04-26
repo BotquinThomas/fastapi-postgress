@@ -15,7 +15,7 @@ docker-compose up -d
 3) navigate to [http://localhost:80](http://localhost:80) (on your browser)
 
 
-4) if you want to have to look inside the container (postgres or fast-api)
+4) if you want to have a look inside the container (postgres or fast-api)
 ```
 # postgres container
 docker container exec -it postgres bin/bash
