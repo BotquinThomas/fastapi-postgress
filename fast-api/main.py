@@ -119,8 +119,7 @@ async def add_items_to_db():
      df_items_food['id'] = range(max_i+1, len(df_items_food)+max_i+1)
      # insert into items
      #df_items_food.to_sql("items",DATABASE_URL, index = False,if_exists="append")  # using pandas to_sql method (not asynchroon)
-     query, values = insert_df_into_table(df = df_items_food, 
-                                          columns = df_items_food.columns, 
+     query, values = insert_df_into_table(df = df_items_food,                                            
                                           table_name="items")
      
      await database.execute_many(query = query, values = values)
