@@ -63,7 +63,7 @@ async def add_item(
      """
      Create a new recipe (in memory only)
      """
-     from data.data import list_items
+     from .data.data import list_items
      new_id = len(list_items.list_items) + 1
      new_item = Item(**{
           "id" : new_id,
